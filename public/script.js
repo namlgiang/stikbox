@@ -8,9 +8,13 @@ ga('send', 'pageview');
 
 $(document).ready(function() {
 
+  $(".color").change(function() {
+    $(".product-image").attr("src", "color/"+ $(this).val() +".jpg");
+  });
+
   $(".buy").click(function() {
     $('html, body').animate({
-      scrollTop: $(".product").offset().top - 200
+      scrollTop: $(".product").offset().top - 100
     }, 1000);
   });
 

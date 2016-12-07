@@ -146,6 +146,70 @@ body {
   font-size: 20px;
 }
 
+.product .p50 {
+  width: 50%;
+  float: left;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.order {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.order .big {
+  font-size: 20px;
+}
+
+.order .small {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.variation {
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.variation select {
+  font-size: 14px;
+}
+
+.variation-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.select-title {
+  width: 50px;
+  display: inline-block;
+}
+
+.line {
+  margin: 10px 0;
+}
+
+.footer {
+  background: #eee;
+  padding: 50px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer img {
+  width: 200px;
+}
+
+.media {
+  text-align: center;
+  padding: 50px 0;
+}
+
 @media (max-aspect-ratio: 1/1) {
   .gif {
     width: 100%;
