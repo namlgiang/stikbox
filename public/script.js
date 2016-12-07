@@ -8,8 +8,22 @@ ga('send', 'pageview');
 
 $(document).ready(function() {
 
+  $(".color").val(0);
+  $(".size").val(0);
+
   $(".color").change(function() {
-    $(".product-image").attr("src", "color/"+ $(this).val() +".jpg");
+    var color = $(".color").val();
+    var size = $(".size").val();
+    $(".product-image").attr("src", "color/"+ color +".jpg");
+    $(".forms>div").removeClass("active");
+    $(".form" + color + size).addClass("active");
+  });
+
+  $(".size").change(function() {
+    var color = $(".color").val();
+    var size = $(".size").val();
+    $(".forms>div").removeClass("active");
+    $(".form" + color + size).addClass("active");
   });
 
   $(".buy").click(function() {

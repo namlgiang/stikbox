@@ -189,6 +189,7 @@ body {
 
 .variation {
   font-size: 16px;
+  margin-bottom: 30px;
 }
 
 .variation select {
@@ -227,6 +228,14 @@ body {
 
 .media img {
   max-width: 100%;
+}
+
+.forms {
+  margin: 20px 0;
+}
+
+.forms>div:not(.active) {
+  display: none;
 }
 
 @media (max-aspect-ratio: 1/1) {
