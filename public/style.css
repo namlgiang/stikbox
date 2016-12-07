@@ -171,8 +171,23 @@ body {
   opacity: 0.8;
 }
 
-.variation {
+.product-title {
   margin-top: 50px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.product-price {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price {
+  color: #009dec;
+}
+
+.variation {
   font-size: 16px;
 }
 
