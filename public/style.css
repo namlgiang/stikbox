@@ -16,6 +16,139 @@ body {
   font-family: "Open Sans";
   margin: 0;
   padding: 0;
-  background: #eff0f3;
+  background: #fff;
   padding-top: 100px;
+}
+
+.header {
+  background: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.container {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  height: 30px;
+  background: url(logo.png) center no-repeat;
+  background-size: contain;
+  margin: 10px 0;
+}
+
+.buy {
+  float: right;
+  background: #fff;
+  color: #000;
+  padding: 7px 14px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.old-price {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.color-animation, .color-animation li {
+  padding: 0;
+  margin: 0;
+}
+
+.color-animation {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  float: left;
+  max-width: 100%;
+  max-height: 100%;
+  float: left;
+}
+
+.color-animation li {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.color-0 {
+  background-image: url(color/0.jpg);
+  z-index: 0;
+}
+
+.color-1 {
+  z-index: 1;
+  opacity: 0;
+}
+
+.header .left {
+  float: left;
+  margin: 15px 0;
+}
+
+.header .container {
+  padding: 0 30px;
+}
+
+.heading {
+  width: 500px;
+  max-width: 100%;
+  float: left;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.first-impression {
+  margin-bottom: 50px;
+}
+
+.gifs {
+  background: #000;
+}
+
+.gif {
+  max-width: 50%;
+  float: left;
+}
+
+.guide {
+  background: #eee;
+}
+
+.guide-image {
+  width: 100%;
+}
+
+.guide .title {
+  text-align: center;
+  margin-top: 50px;
+  color: #444;
+  font-size: 20px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .gif {
+    width: 100%;
+    max-width: 100%;
+  }
 }

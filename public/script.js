@@ -14,6 +14,16 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  var color = 0;
+  setInterval(function() {
+    color = (color+1)%4;
+    $(".color-1").css("background-image", "url(color/"+color+".jpg)");
+    $(".color-1").animate({opacity: 1}, 500, function() {
+      $(".color-0").css("background-image", "url(color/"+color+".jpg)");
+      $(".color-1").css("opacity", 0);
+    });
+  }, 1500);
+
   $("form").submit(function() {
     fbq('track', 'InitiateCheckout');
     ga('send', 'pageview', 'InitiateCheckout');
