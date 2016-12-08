@@ -238,6 +238,10 @@ body {
   display: none;
 }
 
+.features .title {
+  font-weight: bold;
+}
+
 @media (max-aspect-ratio: 1/1) {
   .gif {
     width: 100%;
